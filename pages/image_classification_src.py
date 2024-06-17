@@ -68,6 +68,6 @@ if my_upload is not None:
     else:
         fix_image(upload=my_upload)
 else:
-    st.write("by koalatech...")
+    st.write("by Jovyck Gegantoni...")
     # fix_image("./zebra.jpg")
     ''')
