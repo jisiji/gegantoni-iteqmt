@@ -29,15 +29,6 @@ with st.expander("Sample ""st.expander"""):
         
     #""", unsafe_allow_html=True)
 
-st.markdown("""
-### 👨‍🎓 Sample Header Title
-
-##### 👨‍👦‍👦 Subheader Title
-
-* Bullet 1
-* Bullet 2
-* Bullet 3
-
 
 ##### 👨‍🔧 About Me
 
