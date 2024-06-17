@@ -51,11 +51,9 @@ def sayFeeling():
     if message_tone == 'positive':
         st.write("this is :smile:")
     else:
-        st.write("this is :disappointed:")
+        st.write("this is")
         
 
 # Button to classify the entered message
 st.button('Analyze Emotion', on_click=sayFeeling)
 
-# To run the app, use the command in terminal:
-# python -m streamlit run your_script_name.py
