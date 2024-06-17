@@ -54,7 +54,8 @@ st.markdown("""
     Carlos Hilado Memorial State College, also known as CHMSU. I am pursuing 
     Bachelor of Science in Information Systems. I live in E. B.Magalona and been
     there since senior high school. This is my ITEQMT ENDTERM- FINAL REQUIREMENT 
-    under the guidance of Mr. Richard Pabelona (a handsome guy) serving as our instructor
+    under the guidance of Mr. Richard Pabelona (a handsome guy) serving as our 
+    instructor for the subject ITEQMT.
 
        
 ### 🔎 Overview""", unsafe_allow_html=True)
