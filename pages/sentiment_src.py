@@ -1,35 +1,68 @@
 import streamlit as st
 
 
-st.header('Simple Sentiment Analyzer App')
-st.subheader('This python code is implemented for Streamlit')
+st.header('Sentiment Analyzer')
 st.code('''
-        import streamlit as st
-        import pandas as pd
-        import pickle
-        from nltk.corpus import names
 
-        st.title("A Simple Sentiment Analyzer")
-        message = st.text_input("Tell me what you feel today: ")
+# Ensure required NLTK data is downloaded
+nltk.download('names')
 
-        # Load the trained Naive Bayes classifier from the saved file
-        filename = 'pages/sentimentAnalyzerTest_model.sav'
-        loaded_model = pickle.load(open(filename, 'rb'))
+# Define features (words) and their corresponding labels (emotions)
+def word_features(words):
+    return dict([(word, True) for word in words])
 
-        # Define features (words) and their corresponding labels (positive/negative)
-        def word_features(words):
-            return dict([(word, True) for word in words])
+# Define sets of words for each emotion
+happy_words = ['happy', 'joyful', 'pleased', 'thrilled', 'ecstatic']
+sad_words = ['sad', 'unhappy', 'depressed', 'gloomy', 'miserable']
+angry_words = ['angry', 'furious', 'irritated', 'mad', 'enraged']
+excited_words = ['excited', 'enthusiastic', 'thrilled', 'eager', 'animated']
+nervous_words = ['nervous', 'anxious', 'worried', 'apprehensive', 'tense']
+scared_words = ['scared', 'fearful', 'terrified', 'panicked', 'anxious']
 
-        message_tone = loaded_model.classify(word_features(message.split()))
+# Create feature sets for each emotion
+happy_features = [(word_features([hap_word]), 'happy') for hap_word in happy_words]
+sad_features = [(word_features([sad_word]), 'sad') for sad_word in sad_words]
+angry_features = [(word_features([ang_word]), 'angry') for ang_word in angry_words]
+excited_features = [(word_features([exc_word]), 'excited') for exc_word in excited_words]
+nervous_features = [(word_features([ner_word]), 'nervous') for ner_word in nervous_words]
+scared_features = [(word_features([sca_word]), 'scared') for sca_word in scared_words]
 
-        # make a function for your button click
+# Combine feature sets for all emotions
+train_set = happy_features + sad_features + angry_features + excited_features + nervous_features + scared_features
 
-        def sayFeeling():
-            # Classify the sentiment
-            if message_tone == 'positive':
-                st.write("this is :smile:")
-            else:
-                st.write("this is :disappointed:")
-                
-        st.button('Say it', on_click=sayFeeling)
-    ''')
+# Train the Naive Bayes classifier
+classifier = NaiveBayesClassifier.train(train_set)
+
+# Save the trained classifier
+filename = 'emotion_classifier_model.sav'
+pickle.dump(classifier, open(filename, 'wb'))
+
+# Streamlit Application
+st.title("Emotion Analyzer")
+message = st.text_input("Tell me what you feel today: ")
+
+# Load the trained Naive Bayes classifier from the saved file
+loaded_model = pickle.load(open(filename, 'rb'))
+
+# Function to classify the message and return the corresponding emoji
+def get_emotion_and_emoji(message):
+    emotion = loaded_model.classify(word_features(message.split()))
+    emojis = {
+        'happy': '😄',
+        'sad': '😢',
+        'angry': '😠',
+        'excited': '😃',
+        'nervous': '😟',
+        'scared': '😨'
+    }
+    return emotion, emojis.get(emotion, '')
+
+# Define the function for the button click
+def sayFeeling():
+    if message:
+        emotion, emoji = get_emotion_and_emoji(message)
+        st.write(f"The emotion you are feeling is: {emotion} {emoji}")
+
+# Button to classify the entered message
+st.button('Analyze Emotion', on_click=sayFeeling)
+  ''')
