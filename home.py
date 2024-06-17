@@ -55,8 +55,8 @@ st.image("./back.jpg")
 
 st.markdown("""
 #
-This Streamlit.app serves as a compilation of our work for the subject 
-ITEQMT. It includes Crop Recommendation ML Model, Basic Sentiment Analyzer, and Image Classifier
+This Streamlit.app serves as a compilation of our work for the subject ITEQMT. It includes 
+Crop Recommendation ML Model, Basic Sentiment Analyzer, and Image Classifier
 
 #
 #
