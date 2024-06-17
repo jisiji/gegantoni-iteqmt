@@ -1,8 +1,10 @@
+
 import streamlit as st
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
+
+
+st.header('Crop Recommendation App')
+st.subheader('This model was trained using a dataset')
+st.code('''
 
 # Title of the Streamlit app
 st.title("Flower Lifespan Predictor")
@@ -47,3 +49,4 @@ if st.button("Predict Lifespan"):
     else:
         predicted_lifespan = predict_lifespan(max_height, min_height, num_petals)
         st.write(f"The predicted lifespan of the flower is: {predicted_lifespan:.2f} weeks")
+  ''')
