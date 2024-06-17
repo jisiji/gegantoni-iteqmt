@@ -65,16 +65,9 @@ st.image("./back.jpg")
 
 
 st.markdown("""
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Id neque aliquam vestibulum morbi blandit cursus risus. Sagittis nisl rhoncus mattis rhoncus. 
-Purus viverra accumsan in nisl nisi scelerisque eu. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. 
-Eleifend quam adipiscing vitae proin. Neque convallis a cras semper auctor neque. Et tortor consequat id porta nibh. 
-Vitae nunc sed velit dignissim sodales ut eu. Bibendum ut tristique et egestas quis ipsum suspendisse. 
-Pharetra massa massa ultricies mi. In nulla posuere sollicitudin aliquam ultrices sagittis. Et pharetra pharetra massa massa. 
-Pretium viverra suspendisse potenti nullam ac. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. 
-Nibh mauris cursus mattis molestie a iaculis at erat. Diam sit amet nisl suscipit. 
-Urna molestie at elementum eu facilisis sed odio morbi quis. Arcu non sodales neque sodales.
+This Streamlit.app serves as a compilation of our work for the subject 
+including Crop Recommendation ML Model, Basic Sentiment Analyzer,
+and Image Classifier
             
 ### ⭐ Star the project on Github  <iframe src="https://ghbtns.com/github-btn.html?user=koalatech&repo=streamlit_web_app&type=star&count=true"  width="150" height="20" title="GitHub"></iframe>   
 """, unsafe_allow_html=True)
