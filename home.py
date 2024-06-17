@@ -17,7 +17,6 @@ show_pages(
 
 st.image("./back.jpg")
  
-st.markdown("---")
 
 with st.expander("Sample ""st.expander"""):
     st.markdown("""
