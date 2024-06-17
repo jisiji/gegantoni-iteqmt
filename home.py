@@ -7,9 +7,15 @@ show_pages(
         Page("home.py", "ITEQMT Machine Learning Application Portfolio"),
         Section("Machine Learning UI App"),
         Page("pages/flowers_classifier_streamlitapp.py", "Flower Classifier", "1️⃣ ", in_section=True),
-        Page("pages/basic_sentiment_analyzer.py", "Basic Sentiment Analyzer", "2️⃣ ", in_section=True),
+        Page("pages/GEGANTONI_SentimentAnalyzer_Model.py", "Sentiment Analyzer", "2️⃣ ", in_section=True),
         Page("pages/img_classification.py", "Fruit Image Classifier ", "3️⃣ ", in_section=True),
 
+        Section("Sample Source Code"),
+        Page("pages/flowers_classifier.py", "Flower Classifier SRC", "1️⃣", in_section=True),
+        Page("pages/sentiment_src.py", "Basic Sentiment Analyzer SRC", "2️⃣", in_section=True),
+        Page("pages/image_classification_src.py", "Image Classification SRC", "3️⃣", in_section=True),
+        Page("pages/full_src_recom.py", "Full Crop Recommendation SRC", "4️⃣", in_section=True),
+        Page("pages/crop_src_full.py", "Crop Recommendation Training Full SRC", "5️⃣", in_section=True),
     ]
 )
 
