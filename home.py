@@ -20,10 +20,11 @@ st.image("./back.jpg")
 
 with st.expander("Socials"""):
     st.markdown("""
-    
-    <a href=""><img src="https://github.com/jisiji/" height="50" /></a>
+    Github
+    <a href="https://github.com/jisiji/"</a>
     #
-    <a href=""><img src="https://www.facebook.com/jovyck.gegantoni" height="50" /></a>
+    Facebook
+    <a href="https://www.facebook.com/jovyck.gegantoni"</a>
 
     #
 
