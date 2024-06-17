@@ -54,10 +54,6 @@ def sayFeeling():
         st.write("this is :disappointed:")
         
 
-# Define the function for the button click
-def sayFeeling():
-    st.write(f"The emotion you are feeling is: {message_tone}")
-
 # Button to classify the entered message
 st.button('Analyze Emotion', on_click=sayFeeling)
 
