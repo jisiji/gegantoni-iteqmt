@@ -46,6 +46,14 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 message_tone = loaded_model.classify(word_features(message.split()))
 
+def sayFeeling():
+    # Classify the sentiment
+    if message_tone == 'positive':
+        st.write("this is :smile:")
+    else:
+        st.write("this is :disappointed:")
+        
+
 # Define the function for the button click
 def sayFeeling():
     st.write(f"The emotion you are feeling is: {message_tone}")
