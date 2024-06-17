@@ -31,8 +31,7 @@ with st.expander("Sample ""st.expander"""):
 
 st.markdown("""
 
-#
-#
+
 #
 
 ##### 👨‍🔧 About Me
@@ -46,7 +45,7 @@ st.markdown("""
     under the guidance of Mr. Richard Pabelona (a handsome guy) serving as our 
     instructor for the subject ITEQMT.
 
-       
+ #
 ### 🔎 Overview""", unsafe_allow_html=True)
 
 
