@@ -7,7 +7,7 @@ show_pages(
         Page("home.py", "ITEQMT Machine Learning Application Portfolio"),
         Section("Machine Learning UI App"),
         Page("pages/flowers_classifier_streamlitapp.py", "Flower Classifier", "1️⃣ ", in_section=True),
-        Page("pages/GEGANTONI_SentimentAnalyzer_Model.pkl", "Sentiment Analyzer", "2️⃣ ", in_section=True),
+        Page("pages/sentiment.py", "Sentiment Analyzer", "2️⃣ ", in_section=True),
         Page("pages/img_classification.py", "Fruit Image Classifier ", "3️⃣ ", in_section=True),
 
         Section("Sample Source Code"),
