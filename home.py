@@ -18,10 +18,12 @@ show_pages(
 st.image("./back.jpg")
  
 
-with st.expander("Sample ""st.expander"""):
+with st.expander("Socials"""):
     st.markdown("""
     
-    <a href=""><img src="https://user-images.githubusercontent.com/875246/185755203-17945fd1-6b64-46f2-8377-1011dcb1a444.png" height="50" /></a>
+    <a href=""><img src="https://github.com/jisiji/" height="50" /></a>
+    #
+    <a href=""><img src="https://www.facebook.com/jovyck.gegantoni" height="50" /></a>
 
     #
 
