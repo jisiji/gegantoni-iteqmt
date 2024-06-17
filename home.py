@@ -51,7 +51,8 @@ st.markdown("""
    I am Jovyck C. Gegantoni
    
        Hello there reader, I am Jovyck C. Gegantoni, a 3rd year college student at Carlos Hilado Memorial State College, also known as CHMSU. I am pursuing Bachelor of Science in Information Systems.
-       I live in E. B. Magalona, kadtui ko kag gai ko kwarta
+       I live in E. B. Magalona and been there since senior high school. This is my ITEQMT ENDTERM - FINAL REQUIREMENT under the guidance of Mr. Richard Pabelona (a handsome guy) serving as our instructor
+
        
 ### 🔎 Overview""", unsafe_allow_html=True)
 
