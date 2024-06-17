@@ -1,7 +1,8 @@
+python
+Copy code
 import streamlit as st
 import nltk
 from nltk.classify import NaiveBayesClassifier
-from nltk.corpus import names
 import pickle
 
 # Ensure required NLTK data is downloaded
@@ -44,16 +45,27 @@ message = st.text_input("Tell me what you feel today: ")
 # Load the trained Naive Bayes classifier from the saved file
 loaded_model = pickle.load(open(filename, 'rb'))
 
-message_tone = loaded_model.classify(word_features(message.split()))
+# Function to classify the message and return the corresponding emoji
+def get_emotion_and_emoji(message):
+    emotion = loaded_model.classify(word_features(message.split()))
+    emojis = {
+        'happy': '😄',
+        'sad': '😢',
+        'angry': '😠',
+        'excited': '😃',
+        'nervous': '😟',
+        'scared': '😨'
+    }
+    return emotion, emojis.get(emotion, '')
 
+# Define the function for the button click
 def sayFeeling():
-    # Classify the sentiment
-    if message_tone == 'positive':
-        st.write("this is :smile:")
-    else:
-        st.write("this is")
-        
+    if message:
+        emotion, emoji = get_emotion_and_emoji(message)
+        st.write(f"The emotion you are feeling is: {emotion} {emoji}")
 
 # Button to classify the entered message
 st.button('Analyze Emotion', on_click=sayFeeling)
 
+# To run the app, use the command in terminal:
+# python -m streamlit run emotion_analyzer.py
