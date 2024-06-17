@@ -1,5 +1,3 @@
-python
-Copy code
 import streamlit as st
 import nltk
 from nltk.classify import NaiveBayesClassifier
@@ -67,5 +65,3 @@ def sayFeeling():
 # Button to classify the entered message
 st.button('Analyze Emotion', on_click=sayFeeling)
 
-# To run the app, use the command in terminal:
-# python -m streamlit run emotion_analyzer.py
