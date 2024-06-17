@@ -21,7 +21,7 @@ st.image("./back.jpg")
 with st.expander("Socials"""):
     st.markdown("""
     Github
-    <a href="https://github.com/jisiji/"</a>
+<a href=""><img src="https://user-images.githubusercontent.com/875246/185755203-17945fd1-6b64-46f2-8377-1011dcb1a444.png" height="50" /></a>
     #
     Facebook
     <a href="https://www.facebook.com/jovyck.gegantoni"</a>
