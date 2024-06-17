@@ -60,9 +60,9 @@ st.markdown("""
 This Streamlit.app serves as a compilation of our work for the subject 
 ITEQMT. It includes Crop Recommendation ML Model, Basic Sentiment Analyzer, and Image Classifier
 
-
-
-
+#
+#
+#
             
 ### ⭐ Star the project on Github  <iframe src="https://ghbtns.com/github-btn.html?user=koalatech&repo=streamlit_web_app&type=star&count=true"  width="150" height="20" title="GitHub"></iframe>   
 """, unsafe_allow_html=True)
